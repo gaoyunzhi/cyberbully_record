@@ -25,4 +25,4 @@
 
 
 
-[投稿](https://github.com/gaoyunzhi/cyberbully_record/issues)
+[投稿](https://github.com/gaoyunzhi/cyberbully_record/issues/new)

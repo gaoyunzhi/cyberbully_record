@@ -17,7 +17,7 @@ def get_image_table(images):
 	if size == 4:
 		width = 2
 	result = [get_image_line(images[:width], width)]
-	result.append('|-------------' * size + '|')
+	result.append('|-------------' * width + '|')
 	for line_number in range(1, math.ceil(1.0 * size / width)):
 		result.append(get_image_line(
 			images[line_number * width : (line_number + 1) * width], width))

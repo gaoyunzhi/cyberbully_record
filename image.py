@@ -2,6 +2,26 @@ import yaml
 import cached_url
 from bs4 import BeautifulSoup
 
+def get_single_image(image):
+	return '<img max-width="800" max-height="800" src="%s" style="max-width:100%;">' % image
+
+def get_image_line(images, width):
+	result = ['|' + get_single_image(x) for x in images]
+	result.append('  |' * (width + 1 - len(images)))
+	return ''.join(result)
+
+def get_image_table(image):
+	size = len(images)
+	width = min(3, size)
+	if size == 4:
+		width = 2
+	result = [get_image_line(images[:width], width)]
+	result.append('|-------------' * size + '|')
+	for line_number in range(1, ceil(1.0 * size / width)):
+		result.append(get_image_line(
+			images[line_number * width : (line_number + 1) * width], width))
+	return '\n'.join(result)
+
 def get_images_from_telegram_url(url):
 	url = url.replace('t.me/', 't.me/s/')
 	relative_url = url.strip('/').split('/')
@@ -24,5 +44,6 @@ def get_images(filename):
 	meta['images'] = images
 	with open(filename, 'w') as f:
 		f.write(yaml.dump(meta, sort_keys=True, indent=2, allow_unicode=True))
+	return meta.get('images')
 
 

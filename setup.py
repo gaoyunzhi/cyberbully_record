@@ -1,6 +1,6 @@
 import os
 import yaml
-from image import get_images
+from image import get_images, get_image_table
 
 output = ['# 网络暴力图鉴\n\n### 文章']
 
@@ -17,11 +17,7 @@ for dirname in os.listdir('records'):
 	filename = 'records/%s/meta.yaml' % dirname
 	with open(filename) as f:
 		meta = yaml.load(f, Loader=yaml.FullLoader)
-	images = get_images(filename)
-
-	output.append('''| <!-- -->    | <!-- -->    |
-|-------------|-------------|
-| Foo         | Bar         |''')
+	output.append(get_image_table(get_images(filename)))
 	output.append('* 罪犯: ' + meta['offender'])
 	# TODO: support other social accounts
 	output.append('* 微信号: ' + meta['wechat_id'])

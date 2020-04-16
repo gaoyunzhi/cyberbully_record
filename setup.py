@@ -20,7 +20,7 @@ for dirname in os.listdir('records'):
 	output.append('* 微信号: ' + meta['wechat_id'])
 	output.append('* 标签: ' + ' '.join(meta['tags']))
 	output.append('* [详细信息](%s)' % meta['detail_link'])
-	output.append('* 图片: ' + ' '.join(meta['detail_link']))
+	output.append('* 图片: ')
 	output.append('''| <!-- -->    | <!-- -->    |
 |-------------|-------------|
 | Foo         | Bar         |''')

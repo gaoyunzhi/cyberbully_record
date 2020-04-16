@@ -20,8 +20,8 @@ def gen_records():
 		filename = 'records/%s/meta.yaml' % dirname
 		with open(filename) as f:
 			meta = yaml.load(f, Loader=yaml.FullLoader)
-		output.append('<p>')	
 		output.append(get_image_html_table(get_images(filename)))
+		output.append('<div>')
 		output.append('<ul>')
 		output.append('<li>罪犯: %s</li>' % meta['offender'])
 		# TODO: support other social accounts
@@ -29,7 +29,7 @@ def gen_records():
 		output.append('<li>标签: %s</li>' % ' '.join(meta['tags']))
 		output.append('<li><a href="%s">详细信息</a></li>' % meta['detail_link'])
 		output.append('</ul>')
-		output.append('</p>')
+		output.append('</div>')
 	output.append('</div>')
 	return BeautifulSoup('\n'.join(output), 'html.parser').find('div')
 	

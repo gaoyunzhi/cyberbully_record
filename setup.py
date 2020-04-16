@@ -10,11 +10,12 @@ for article in articles:
 
 output.append('\n\n## 网络暴力公示')
 
-print(filter(os.path.isdir, os.listdir('records')))
-for dirname in filter(os.path.isdir, os.listdir('records')):
+for dirname in os.listdir('records'):
+	if not os.path.isdir('records/%s' % dirname):
+		continue
 	with open('records/%s/meta.yaml' % dirname) as f:
 		meta = yaml.load(f, Loader=yaml.FullLoader)
-	output.append('* 罪犯: ' + meta['name'])
+	output.append('* 罪犯: ' + meta['offender'])
 	# TODO: support other social accounts
 	output.append('* 微信号: ' + meta['wechat_id'])
 	output.append('* 标签: ' + ' '.join(meta['tags']))

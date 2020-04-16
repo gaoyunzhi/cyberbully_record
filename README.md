@@ -11,7 +11,7 @@
 |<img width="100" src="https://cdn1.telesco.pe/file/QcU-DWU4-aZB4s157m_KCp0SbbCHvu9VmlvVt1BrnIaalIJzuUapKFgD_kyG-iNoX1gggVK3C0Zl6sSzTUSl3Py7VfQGa4yn7Jg48c_zwhrE37lz04OtYdq-H8nvdFgqfg7gO1U-IIGXBt3oyV5dKlwLtR3ENTFby9Tk6M1hVMpo2tmaHbRQ1QC9e9eLqOjGpysRGStJMVtTU1LfN7-Zh1BV0eu8RuRJj4lkGuUB2NqarwGuQqmHProO-n4A77EMxF77xKlLXTmpvVSf_XQMAPE8WlbWoy0FvJjFT-0FIVVE0wsXf9wZsbkebWNbFi4A5CQNQnKPUVil345eUNBlRg.jpg" style="max-width:100%;" align="top">|<img width="100" src="https://cdn1.telesco.pe/file/by2UtRae8Pc59cxFIm5GiGDcbo0NuhZHiVfsSN4NK1lViwG0Pacx6hDMAjiLp2p7shBFwKPCJnKmHgS5E6yTPZwkZ-xXzUKiMfGrRV0gNmsmbpcV-_icmZny1YNWOwZFb9CG7gX7s1o_5ddNCln8G2MVvfv8xy73neDBDukgLG3Fa8MpYufSV6jxUKiCF5VEaYdE_2pIt7qwA8uNdwzylVTSRNhaDrQadhnLbDZr7HU3KP6mcxV6DzuhFkTi7h34T5K1GI2dRBKjD7gQkURBZdoNw2rlp9u2Q_H5MiPrZElsBj-3cEWhQ-xTLv506ZTEYBxp_yz4_c934pEAbF5Kjw.jpg" style="max-width:100%;" align="top">|<img width="100" src="https://cdn1.telesco.pe/file/VkwpJ7EhmewN9HHgNZ_KnIRCBC7dkYWKq5A-lT8Z1rxvujEi2yTncqjmzAiVlGuSdk4r3LyBDFk75Qav2-DAvMjvCp93rzKCUE1v-vN4y_tPUrTzGCvmCfnRTKbZOmTWx3ZAk5rh9KZW2AqZhFqaAcullH3YTmNnSjdlx09pgyK_TC1Kit227w12Po5_eCF86ovYYPNJqJK64X-kgS7EhQLK5Um_tDOaqNMUY_6n4_qW2fzmP8Rt1eU6fb5W5dOjcEllEXNgTorji6cuz3owXqpShmstZDUbsWRzRLu7nT0d9W7Ic33XMRslMwKVsjjayoZ3UvlZykvOu8n3VCqYkw.jpg" style="max-width:100%;" align="top">|
 * 罪犯: cico
 * 微信号: cc1988011
-* 标签: 性别歧视 隐私侵犯 性骚扰
+* 标签: 性别歧视 隐私侵犯 性骚扰 辱骂
 * [详细信息](https://t.me/online_violence/9)
 
 
@@ -20,7 +20,7 @@
 |-------------|-------------|-------------|
 * 罪犯: 轻尘
 * 微信号: YS188816661999
-* 标签: 性骚扰 死亡威胁
+* 标签: 性骚扰 死亡威胁 辱骂
 * [详细信息](https://t.me/online_violence/18)
 
 

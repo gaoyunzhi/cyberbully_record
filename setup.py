@@ -21,10 +21,12 @@ for dirname in os.listdir('records'):
 	output.append('* 标签: ' + ' '.join(meta['tags']))
 	output.append('* [详细信息](%s)' % meta['detail_link'])
 	output.append('* 图片: ')
+	output.append('[//]: # (comment)')
 	output.append('''| <!-- -->    | <!-- -->    |
 |-------------|-------------|
 | Foo         | Bar         |''')
-	output.append('[//]: # (comment)')
+	output.append('[//]: # (comment)\n\n')
+
 
 
 with open('README.md', 'w') as f:

@@ -10,6 +10,7 @@ for article in articles:
 
 output.append('\n\n## 网络暴力公示')
 
+print(filter(os.path.isdir, os.listdir('records')))
 for dirname in filter(os.path.isdir, os.listdir('records')):
 	with open('records/%s/meta.yaml' % dirname) as f:
 		meta = yaml.load(f, Loader=yaml.FullLoader)
@@ -26,6 +27,8 @@ for dirname in filter(os.path.isdir, os.listdir('records')):
 
 with open('README.md', 'w') as f:
 	f.write(''.join(output))
+
+print(1)
 
 os.system('git add . > /dev/null 2>&1 && git commit -m commit > /dev/null 2>&1 && git push -u -f > /dev/null 2>&1')
 

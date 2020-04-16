@@ -13,7 +13,7 @@ def gen_articles():
 	return BeautifulSoup('\n'.join(output), 'html.parser').find('ul')
 
 def gen_records():
-	output = ['<div class="records_show">']
+	output = ['<p class="records_show">']
 	for dirname in os.listdir('records'):
 		if not os.path.isdir('records/%s' % dirname):
 			continue
@@ -30,8 +30,8 @@ def gen_records():
 		output.append('<li><a href="%s">详细信息</a></li>' % meta['detail_link'])
 		output.append('</ul>')
 		output.append('</p>')
-	output.append('</div>')
-	return BeautifulSoup('\n'.join(output), 'html.parser').find('div')
+	output.append('</p>')
+	return BeautifulSoup('\n'.join(output), 'html.parser').find('p')
 	
 def gen_index():
 	with open('index.html') as f:
@@ -40,7 +40,7 @@ def gen_index():
 	articles = soup.find('ul')
 	articles.replace_with(gen_articles())
 
-	records = soup.find('div', class_='records_show')
+	records = soup.find('p', class_='records_show')
 	records.replace_with(gen_records())
 
 	with open('index.html', 'w') as f:

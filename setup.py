@@ -6,7 +6,7 @@ output = ['# 网络暴力图鉴\n\n## 文章']
 with open('articles/meta.yaml') as f:
 	articles = yaml.load(f, Loader=yaml.FullLoader)
 for article in articles:
-	output.append('\n[%s](%s)' % (article['name'], article['link']))
+	output.append('\n* [%s](%s)' % (article['name'], article['link']))
 
 output.append('\n\n## 网络暴力公示')
 

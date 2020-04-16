@@ -5,7 +5,7 @@ import math
 
 
 def get_single_image(image):
-	return '<img width="500" src="' + image + '" style="max-width:100%;">'
+	return '<img width="300" src="' + image + '" style="max-width:100%;">'
 
 def get_image_line(images, width):
 	result = ['|' + get_single_image(x) for x in images]

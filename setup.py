@@ -24,7 +24,6 @@ for dirname in filter(os.path.isdir, os.listdir('records')):
 | Foo         | Bar         |''')
 
 
-
 with open('README.md', 'w') as f:
 	f.write(''.join(output))
 

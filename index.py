@@ -30,6 +30,7 @@ def gen_records():
 		output.append('<li><a href="%s">详细信息</a></li>' % meta['detail_link'])
 		output.append('</ul>')
 		output.append('</div>')
+		output.append('<hr>')
 	output.append('</div>')
 	return BeautifulSoup('\n'.join(output), 'html.parser').find('div')
 	

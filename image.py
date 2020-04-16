@@ -16,7 +16,7 @@ def get_single_html_image(image):
 		'" style="max-width:100%;margin-right:10px" align="top"></a>'
 
 def get_image_html_table(images):
-	return ''.join([get_single_image(image) for image in images])
+	return ''.join([get_single_html_image(image) for image in images])
 
 def get_image_table(images):
 	size = len(images)

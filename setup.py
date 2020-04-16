@@ -24,6 +24,7 @@ for dirname in os.listdir('records'):
 	output.append('''| <!-- -->    | <!-- -->    |
 |-------------|-------------|
 | Foo         | Bar         |''')
+	output.append('\n\n')
 
 
 with open('README.md', 'w') as f:

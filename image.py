@@ -8,7 +8,7 @@ def get_single_image(image):
 
 def get_image_line(images, width):
 	result = ['|' + get_single_image(x) for x in images]
-	result.append('  |' * (width + 1 - len(images)))
+	result.append(('|  ' * (width + 1 - len(images))).strip())
 	return ''.join(result)
 
 def get_image_table(images):

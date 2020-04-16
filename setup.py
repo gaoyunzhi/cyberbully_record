@@ -21,11 +21,11 @@ for dirname in os.listdir('records'):
 	output.append('* 标签: ' + ' '.join(meta['tags']))
 	output.append('* [详细信息](%s)' % meta['detail_link'])
 	output.append('* 图片: ')
-	output.append('\n[//]: # (comment)')
+	output.append('\n\n[//]: # (comment)')
 	output.append('''| <!-- -->    | <!-- -->    |
 |-------------|-------------|
 | Foo         | Bar         |''')
-	output.append('\n[//]: # (comment)\n\n')
+	output.append('\n\n')
 
 
 

@@ -9,7 +9,7 @@
 * 罪犯: cico
 * 微信号: cc1988011
 * 标签: 性别歧视 隐私侵犯 性骚扰
-* 详细信息: h t t p s : / / t . m e / o n l i n e _ v i o l e n c e / 9
+* [详细信息](https://t.me/online_violence/9)
 * 图片: h t t p s : / / t . m e / o n l i n e _ v i o l e n c e / 9
 | <!-- -->    | <!-- -->    |
 |-------------|-------------|
@@ -17,7 +17,7 @@
 * 罪犯: 轻尘
 * 微信号: YS188816661999
 * 标签: 性骚扰
-* 详细信息: h t t p s : / / t . m e / o n l i n e _ v i o l e n c e / 1 8
+* [详细信息](https://t.me/online_violence/18)
 * 图片: h t t p s : / / t . m e / o n l i n e _ v i o l e n c e / 1 8
 | <!-- -->    | <!-- -->    |
 |-------------|-------------|

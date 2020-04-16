@@ -1,9 +1,10 @@
 import yaml
 import cached_url
 from bs4 import BeautifulSoup
+import math
 
 def get_single_image(image):
-	return '<img max-width="800" max-height="800" src="%s" style="max-width:100%;">' % image
+	return '<img max-width="800" max-height="800" src="' + image + '" style="max-width:100%;">'
 
 def get_image_line(images, width):
 	result = ['|' + get_single_image(x) for x in images]
@@ -17,7 +18,7 @@ def get_image_table(images):
 		width = 2
 	result = [get_image_line(images[:width], width)]
 	result.append('|-------------' * size + '|')
-	for line_number in range(1, ceil(1.0 * size / width)):
+	for line_number in range(1, math.ceil(1.0 * size / width)):
 		result.append(get_image_line(
 			images[line_number * width : (line_number + 1) * width], width))
 	return '\n'.join(result)

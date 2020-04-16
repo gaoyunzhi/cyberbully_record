@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 import math
 
 def get_single_image(image):
-	return '<img width="300" src="' + image + '" style="max-width:100%;" align="top">'
+	return '<img width="100" src="' + image + '" style="max-width:100%;" align="top">'
 
 def get_image_line(images, width):
 	result = ['|' + get_single_image(x) for x in images]

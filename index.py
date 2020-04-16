@@ -20,8 +20,8 @@ def gen_records():
 		filename = 'records/%s/meta.yaml' % dirname
 		with open(filename) as f:
 			meta = yaml.load(f, Loader=yaml.FullLoader)
-		output.append(get_image_html_table(get_images(filename)))
 		output.append('<div>')
+		output.append(get_image_html_table(get_images(filename)))
 		output.append('<ul>')
 		output.append('<li>罪犯: %s</li>' % meta['offender'])
 		# TODO: support other social accounts

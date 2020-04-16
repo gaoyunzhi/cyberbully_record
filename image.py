@@ -3,6 +3,7 @@ import cached_url
 from bs4 import BeautifulSoup
 import math
 
+
 def get_single_image(image):
 	return '<img width="500" src="' + image + '" style="max-width:100%;">'
 
@@ -10,6 +11,9 @@ def get_image_line(images, width):
 	result = ['|' + get_single_image(x) for x in images]
 	result.append(('|  ' * (width + 1 - len(images))).strip())
 	return ''.join(result)
+
+def get_image_html_table(images):
+	return ''.join([get_single_image(image) for image in images])
 
 def get_image_table(images):
 	size = len(images)

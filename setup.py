@@ -1,14 +1,14 @@
 import os
 import yaml
 
-output = ['# 网络暴力图鉴\n\n## 文章']
+output = ['# 网络暴力图鉴\n\n### 文章']
 
 with open('articles/meta.yaml') as f:
 	articles = yaml.load(f, Loader=yaml.FullLoader)
 for article in articles:
-	output.append('\n* [%s](%s)' % (article['name'], article['link']))
+	output.append('* [%s](%s)' % (article['name'], article['link']))
 
-output.append('\n\n## 网络暴力公示')
+output.append('\n\n### 网络暴力公示')
 
 for dirname in os.listdir('records'):
 	if not os.path.isdir('records/%s' % dirname):
@@ -27,9 +27,7 @@ for dirname in os.listdir('records'):
 
 
 with open('README.md', 'w') as f:
-	f.write(''.join(output))
-
-print(1)
+	f.write('\n'.join(output))
 
 os.system('git add . > /dev/null 2>&1 && git commit -m commit > /dev/null 2>&1 && git push -u -f > /dev/null 2>&1')
 

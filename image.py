@@ -9,5 +9,6 @@ def get_images(filename):
 		return meta.get('images')
 	if 't.me' not in meta['detail_link']:
 		return []
-	BeautifulSoup(cached_url.get(meta['detail_link']), 'html.parser')
+	url = meta['detail_link'].replace('t.me/', 't.me/s/')
+	BeautifulSoup(cached_url.get(url), 'html.parser')
 

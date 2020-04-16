@@ -25,7 +25,7 @@ for dirname in os.listdir('records'):
 	output.append('''| <!-- -->    | <!-- -->    |
 |-------------|-------------|
 | Foo         | Bar         |''')
-	output.append('[//]: # (comment)\n\n')
+	output.append('\n[//]: # (comment)\n\n')
 
 
 

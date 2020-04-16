@@ -23,4 +23,7 @@
 * 标签: 性骚扰 死亡威胁 辱骂
 * [详细信息](https://t.me/online_violence/18)
 
+### 投稿请联系
+https://github.com/gaoyunzhi/cyberbully_record/issues
+
 

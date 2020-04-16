@@ -11,6 +11,10 @@ def get_image_line(images, width):
 	result.append(('|  ' * (width + 1 - len(images))).strip())
 	return ''.join(result)
 
+def get_single_html_image(image):
+	return '<a href="' + image + '"><img width="100" src="' + image + \
+		'" style="max-width:100%;margin-right:10px" align="top"></a>'
+
 def get_image_html_table(images):
 	return ''.join([get_single_image(image) for image in images])
 

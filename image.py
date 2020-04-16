@@ -10,7 +10,7 @@ def get_image_line(images, width):
 	result.append('  |' * (width + 1 - len(images)))
 	return ''.join(result)
 
-def get_image_table(image):
+def get_image_table(images):
 	size = len(images)
 	width = min(3, size)
 	if size == 4:

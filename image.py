@@ -3,7 +3,6 @@ import cached_url
 from bs4 import BeautifulSoup
 import math
 
-
 def get_single_image(image):
 	return '<img width="300" src="' + image + '" style="max-width:100%;" align="top">'
 

@@ -26,7 +26,7 @@ def gen_records():
 		output.append('<li>罪犯: %s</li>' % meta['offender'])
 		# TODO: support other social accounts
 		output.append('<li>微信号: %s</li>' % meta['wechat_id'])
-		output.append('<li>标签: %s</li>' + ' '.join(meta['tags']))
+		output.append('<li>标签: %s</li>' % ' '.join(meta['tags']))
 		output.append('<li><a href="%s">详细信息</a></li>' % meta['detail_link'])
 		output.append('</ul>')
 		output.append('</p>')

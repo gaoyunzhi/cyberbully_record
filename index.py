@@ -31,7 +31,7 @@ def gen_records():
 	output.append('</div>')
 	return BeautifulSoup('\n'.join(output), 'html.parser').find('div')
 	
-def gen_readme():
+def gen_index():
 	with open('index.html') as f:
 		soup = BeautifulSoup(f.read(), 'html.parser')
 

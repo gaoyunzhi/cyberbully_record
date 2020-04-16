@@ -24,3 +24,5 @@
 * [详细信息](https://t.me/online_violence/18)
 
 
+
+[投稿](https://github.com/gaoyunzhi/cyberbully_record/issues)

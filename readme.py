@@ -26,5 +26,7 @@ def gen_readme():
 		output.append('* [详细信息](%s)' % meta['detail_link'])
 		output.append('\n\n')
 
+	output.append('[投稿](https://github.com/gaoyunzhi/cyberbully_record/issues)')
+
 	with open('README.md', 'w') as f:
 		f.write('\n'.join(output))

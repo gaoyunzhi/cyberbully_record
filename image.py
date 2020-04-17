@@ -47,8 +47,8 @@ def save_to_local(images):
 		cached_url.get(image, force_cache=True, mode='b')
 		ext = os.path.splitext(image)[1] or '.html'
 		fn = cached_url.getFileName(image) + ext
-		os.system('cp tmp/%s index_file' % fn)
-		yield 'index_file/' + fn
+		os.system('cp tmp/%s index_files/' % fn)
+		yield 'index_files/' + fn
 
 def get_images(filename):
 	with open(filename) as f:

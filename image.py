@@ -2,6 +2,7 @@ import yaml
 import cached_url
 from bs4 import BeautifulSoup
 import math
+import os
 
 def get_single_image(image):
 	return '<img width="300" src="' + image + '" style="max-width:100%;" align="top">'
@@ -41,6 +42,14 @@ def get_images_from_telegram_url(url):
 		for item in post.find_all('a', class_='tgme_widget_message_photo_wrap'):
 			yield item['style'].split("background-image:url('")[1].split("')")[0]
 
+def save_to_local(images):
+	for image in images:
+		cached_url.get(image, force_cache=True, mode='b')
+		ext = os.path.splitext(image)[1] or '.html'
+		fn = cached_url.getFileName(image) + ext
+		os.system('cp tmp/%s index_file' % fn)
+		yield 'index_file/' + fn
+
 def get_images(filename):
 	with open(filename) as f:
 		meta = yaml.load(f, Loader=yaml.FullLoader)
@@ -48,8 +57,8 @@ def get_images(filename):
 	# 	return meta.get('images')
 	if 't.me' not in meta['detail_link']:
 		return []
-	images = list(get_images_from_telegram_url(meta['detail_link']))
-	meta['images'] = images
+	images = get_images_from_telegram_url(meta['detail_link'])
+	meta['images'] = list(save_to_local(images))
 	with open(filename, 'w') as f:
 		f.write(yaml.dump(meta, sort_keys=True, indent=2, allow_unicode=True))
 	return meta.get('images')

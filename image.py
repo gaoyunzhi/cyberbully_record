@@ -44,8 +44,8 @@ def get_images_from_telegram_url(url):
 def get_images(filename):
 	with open(filename) as f:
 		meta = yaml.load(f, Loader=yaml.FullLoader)
-	if meta.get('images'):
-		return meta.get('images')
+	# if meta.get('images'):
+	# 	return meta.get('images')
 	if 't.me' not in meta['detail_link']:
 		return []
 	images = list(get_images_from_telegram_url(meta['detail_link']))
